@@ -1,0 +1,132 @@
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+#pavan {
+  margin-top: 130px;
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.card-container {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  perspective: 1000px;
+}
+
+.card {
+  width: 300px;
+  height: 300px;
+  border-radius: 20px;
+  transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+}
+
+.description {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 118, 0, 0.9);
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  transform: translateY(100%) rotateX(-90deg);
+  transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);    opacity: 0;
+}
+
+.card-container:hover {
+  transform: translateY(-15px) scale(1.05);
+}
+
+.card-container:hover .card {
+  box-shadow: 0 15px 30px rgba(255, 118, 0, 0.4);
+}
+
+.card-container:hover .description {
+  transform: translateY(0) rotateX(0);
+  opacity: 1;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(45deg, transparent, rgba(255, 118, 0, 0.3), transparent);
+  transform: rotate(45deg);
+  transition: all 0.8s ease;
+}
+
+.card-container:hover .card::before {
+  animation: shine 1.5s infinite;
+}
+
+@keyframes shine {
+  0% {
+      transform: rotate(45deg) translateY(-100%);
+  }
+  100% {
+      transform: rotate(45deg) translateY(100%);
+  }
+}
+
+.card-container::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  border: 2px solid #ff7600;
+  border-radius: 18px;
+  opacity: 0;
+  transition: all 0.5s ease;
+  transform: scale(1.1);
+}
+
+.card-container:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.description h4 {
+  margin: 0 0 10px;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.description p {
+  margin: 0 0 10px;
+  font-size: 1em;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.cart-btn, .buy-btn {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cart-btn:hover, .buy-btn:hover {
+  background-color: #333;
+}

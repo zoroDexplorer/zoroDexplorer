@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #111111;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 3px;
+}
+
+.circle {
+  position: relative;
+  display: block;
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  background: rgba(20, 19, 19, 0.1);
+  box-shadow: 0 0 6px rgba(255, 165, 0, 0.7);
+  animation: showCircle 1s forwards;
+  opacity: 0;
+}
+
+@keyframes showCircle {
+  to {
+      opacity: 1;
+  }
+}
+
+.lightning {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: linear-gradient(transparent 0%, #FF7600 0%),
+              linear-gradient(to top left, #FF7600 43%, #FF7600 43%, #FF7600 44%, transparent 44%),
+              linear-gradient(to top left, transparent 56%, #FF7600 56%, #FF7600 57%, #FF7600 57%),
+              linear-gradient(transparent 0%, #FF7600 0%),
+              linear-gradient(to top left, #FF7600 51%, transparent 51%),
+              linear-gradient(to top left, transparent 49%, #FF7600 49%);
+  background-size: 15% 30%, 16% 32%, 16% 32%, 17% 32%, 17% 32%, 17% 32%;
+  background-position: 50% 50%, 32% 5%, 70% 100%, 50% 50%, 33% 7%, 69% 98%;
+  background-repeat: no-repeat;
+  transform: skewY(-30deg) skewX(-30deg) scale(0);
+  z-index: 2;
+  animation: showLightning 1s 1s forwards, lightningGlow 1.5s infinite alternate 2s;
+  filter: drop-shadow(0 0 6px rgba(255, 165, 0, 0.7));
+  opacity: 0;
+}
+
+@keyframes showLightning {
+  to {
+      transform: skewY(-30deg) skewX(-30deg) scale(1);
+      opacity: 1;
+  }
+}
+
+@keyframes lightningGlow {
+  from {
+      filter: drop-shadow(0 0 6px rgba(255, 165, 0, 0.7));
+  }
+  to {
+      filter: drop-shadow(0 0 6px rgba(255, 165, 0, 1));
+  }
+}
+
+.sprinkle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background: #FF7600;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #FF7600;
+  animation: sprinkle 2s infinite;
+  opacity: 0;
+}
+
+.sprinkle:nth-child(2) { top: 25%; left: 15%; animation-delay: 2s; }
+.sprinkle:nth-child(3) { top: 5%; left: 45%; animation-delay: 2.5s; }
+.sprinkle:nth-child(4) { top: 65%; left: 75%; animation-delay: 3s; }
+.sprinkle:nth-child(5) { top: 45%; left: 25%; animation-delay: 3.5s; }
+.sprinkle:nth-child(6) { top: 85%; left: 55%; animation-delay: 4s; }
+
+@keyframes sprinkle {
+  0%, 100% {
+      opacity: 0;
+      transform: scale(0.5);
+  }
+  50% {
+      opacity: 1;
+      transform: scale(1.2);
+  }
+}
+
+.text {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.text .discount, .text .batteries {
+  opacity: 0;
+  font-size: 18px;
+  color: white;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.text .discount {
+  animation: showDiscount 1s 2s forwards, glow 1.5s infinite alternate 2s;
+}
+
+.text .batteries {
+  animation: showBatteries 1s 2.5s forwards, glow 1.5s infinite alternate 2.5s;
+}
+
+@keyframes showDiscount {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes showBatteries {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes glow {
+  from {
+      text-shadow: 0 0 4px rgba(255, 255, 255, 0.7), 0 0 8px rgba(255, 255, 255, 0.5);
+  }
+  to {
+      text-shadow: 0 0 8px rgba(255, 255, 255, 1), 0 0 12px rgba(255, 255, 255, 0.7);
+  }
+}
+
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .logo {
+      flex-direction: row;
+      align-items: center;
+  }
+
+  .text {
+      text-align: center;
+  }
+
+  .discount, .batteries {
+      font-size: 16px;
+  }
+  .logo[_ngcontent-ng-c763021311]{
+    flex-direction:row !important ;
+  }
+  .logo[_ngcontent-ng-c2704985284]{
+    flex-direction:row !important;
+
+  }
+}
+.main-content {
+  padding-top: 70px; /* Adjust the value according to your navbar height */
+}
+header {
+
+  align-items: center;
+  /* padding: 15px 30px; Increased padding for better spacing */
+  background-color: #111111;
+  position: fixed;
+  top: 0;
+  margin-top: 28px;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slightly stronger shadow for better depth */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Smooth transition for state changes */
+}
+
+/* footer css */
+
+

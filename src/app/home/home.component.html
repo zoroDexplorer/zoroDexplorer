@@ -1,0 +1,400 @@
+<div class="mt-5">
+    <app-header></app-header>
+</div>
+<div class="main-content">
+    <!-- carousel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="assets/Vehical1.jpg" class="d-block w-100" alt="..." height="auto">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/SolarBattery.jpg" class="d-block w-100" alt="..." height="auto">
+            </div>
+            <div class="carousel-item">
+                <img src="assets/Banner3.jpg" class="d-block w-100" alt="..." height="auto">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+<!-- logos -->
+<div class="">
+    <!-- <h3>categories</h3> -->
+    <div class="category-container ">
+        <div *ngFor="let category of categories" class="category-item" (click)="navigateTo(category.route)"
+            style="margin-right: 8px; margin-left: 8px; padding-left: 20px; padding-right: 20px !important;">
+            <div class="category-icon">
+                <i [class]="category.icon"></i>
+            </div>
+            <p>{{ category.name }}</p>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="text-center m-4">
+    <h3 style="text-decoration-line: underline;"> OUR PRODUCTS</h3>
+</div>
+
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/ALPHA CELL.png" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="polaroid m-5">
+        <img src="../assets/battery1.jpg" alt="Norway" class="image" style="width:100%">
+        <div class="middle">
+            <div class="text">
+                <button class="btn btn-sm"> add to cart</button>
+            </div>
+            <div class="text">
+                <button class="btn btn-sm"> buy</button>
+            </div>
+        </div>
+    </div>
+
+<!-- cards  -->
+<div class="text-center">
+
+    <div class="card-container">
+        <img class="card" src="../assets/battery1.jpg" alt="no img">    
+        <h6 class="text-center">Tesla Power Usa</h6>
+  
+    </div>
+
+    <div class="card-container ">
+        <img class="card" src="../assets/ALPHA CELL.png" alt="no img">
+
+        <h6 class="text-center">Alpha Cell</h6>
+
+
+    </div>
+    <div class="card-container">
+        <img class="card" src="../assets/battery2.jpg" alt="no img">
+        <h6 class="text-center">Us Battery</h6>
+
+    </div>
+
+    <div class="card-container">
+        <img class="card" src="../assets/image3.png" alt="no img">
+        <h6 class="text-center">Tesla Power</h6>
+
+    </div>
+
+    <div class="card-container">
+        <img class="card" src="../assets/image4.jpg" alt="no img">
+        <h6 class="text-center">West Marine Battery</h6>
+
+    </div>
+
+    <div class="card-container">
+        <img class="card" src="../assets/Life.jpg" alt="no img">
+        <h6 class="text-center">Life Line Statrting Battery</h6>
+
+    </div>
+
+    <div class="card-container">
+        <img class="card" src="../assets/MASTERVOLT GEL.jpg" alt="no img">
+        <h6 class="text-center">Mastervolt Gel Battery</h6>
+    </div>
+
+    <div class="card-container">
+        <img class="card" src="../assets/Northway.png" alt="no img">
+        <h6 class="text-center">Northway Battery</h6>
+    </div>
+
+    <div class="card-container">
+        <img class="card" src="../assets/optima Battries.png" alt="no img">
+        <h6 class="text-center">Optima Battery</h6>
+    </div>
+
+    <div class="card-container">
+        <img class="card" src="../assets/powe safe.png" alt="no img">
+        <h6 class="text-center">Power Safe SBS Exel Battery</h6>
+    </div>
+    <div class="card-container">
+        <img class="card" src="../assets/Pure TRON .png" alt="no img">
+        <h6 class="text-center">Pure Tron AGM Battery</h6>
+    </div>
+
+</div>
+
+
+<!-- testiminoal -->
+<section id="testimonials">
+    <!--heading-->
+    <div class="bg-dark text-white" style="border-radius: 20px;">
+        <h1 class="p-2">Clients Says About Us</h1>
+    </div>
+    <div class="testimonial-box-container">
+        <!---Box-1-->
+        <div class="testimonial-box">
+            <!----top-->
+            <div class="box-top">
+                <!---profile-->
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgLZJbOO4IDNJCcu1zbxXdHUX-kCF1TBeaQAEfuhuHnt0hwv2wDVi8RZcYMA5GPUZll14lRlG0Dw75-QQt1gNg-8Z3LpJQbIVpr1kFi6e_1jcMyNltRmTAXOoubK0pfZsUAwIBFCkAIV9tuDrdWt6MK_wx2mFUmlhRExEB4R2ehNrBBIRqKI_Et5WNpXLU/s320/harly.jpg"
+                            alt="">
+                    </div>
+                    <!------name-and-username-->
+                    <div class="name-user">
+                        <strong>Tommy Cannon</strong>
+                        <span>@TommyCannon</span>
+                    </div>
+                </div>
+                <!-------reviews-->
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+            </div>
+            <!----comments-->
+            <div class="client-comment">
+                <p>The gentleman I spoke with today is one of the best. When I say I have lock this number in my phone
+                    it's there and if anyone needs a battery I got the number. Thanks for everything
+                    .</p>
+            </div>
+        </div>
+
+
+        <div class="testimonial-box">
+            <!----top-->
+            <div class="box-top">
+                <!---profile-->
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO87S6N3Xci32_JiUITIJ9m2vaiPyxoqMTgkmlUsnUFV7TW11innFCy0RjRNAPq0fPw8ii2govbIyaEdkN6f2X6feCc6Jn_9ECP5wwfDpgtHlKF9gCMihZ2kUFcNDe8o0UHiITpCJmsrXYvArPTRr7XbV73S2AkWZF1Wa-_yPPxSytXY40RDiwMk1SpIg/s320/must.jpg"
+                            alt="">
+                    </div>
+                    <!------name-and-username-->
+                    <div class="name-user">
+                        <strong>kracka Jack</strong>
+                        <span>@tousejazweb</span>
+                    </div>
+                </div>
+                <!-------reviews-->
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+
+                </div>
+            </div>
+            <!----comments-->
+            <div class="client-comment">
+                <p>Best deal for batteries in Oakland Park and great customer service I would highly recommend everyone
+                    to check out this place and thank you again for the correct battery</p>
+            </div>
+        </div>
+
+        <div class="testimonial-box">
+            <!----top-->
+            <div class="box-top">
+                <!---profile-->
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="https://wallpapercave.com/wp/wp3582940.jpg" alt="">
+                    </div>
+                    <!------name-and-username-->
+                    <div class="name-user">
+                        <strong>Ramsey G</strong>
+                        <span>@RamseyG</span>
+                    </div>
+                </div>
+                <!-------reviews-->
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i><!---------emptystar-->
+                </div>
+            </div>
+            <!----comments-->
+            <div class="client-comment">
+                <p>This is the best place to get a battery for your vehicle hands down! I recently got a battery tested
+                    at O'Reilly and they told me it was a bad battery and I had to get a new one. They wanted to make a
+                    sale and not actually help. So I brought it here and it was really tested and properly charged and
+                    starts my car perfectly fine every time! He's very honest and professional, I'm definitely a
+                    lifetime customer from now on! Highly recommend. (See photo of O'Reilly test😡👎🏿).</p>
+            </div>
+        </div>
+
+
+        <div class="testimonial-box">
+            <!----top-->
+            <div class="box-top">
+                <!---profile-->
+                <div class="profile">
+                    <div class="profile-img">
+                        <img src="https://editorial.pxcrush.net/carsales/general/editorial/2023-chevrolet-camaro-ss-021.jpg?width=1024&height=683"
+                            alt="">
+                    </div>
+                    <!------name-and-username-->
+                    <div class="name-user">
+                        <strong>Harvey Smallwood, Jr.</strong>
+                        <span>@HarveySmallwood.</span>
+                    </div>
+                </div>
+                <!-------reviews-->
+                <div class="reviews">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+            <!----comments-->
+            <div class="client-comment">
+                <p>I needed a battery ASAP, as my truck was not holding a charge. I called and I was told to give the
+                    vehicle type and engine size. I then was told I could come pick it up. Once I arrived, I was met by
+                    Harry Vasquez.
+
+                    Me being new to Florida, he made me feel like a long time friend. Harry shared his experience in the
+                    battery field and I felt very comfortable. We chatted for about an hour but my battery was in my
+                    vehicle in 10 minutes.
+
+                    You just don't meet genuine people all the time when you are new to a different state. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crosssorigin="anonymous"></script>

@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+#main-header {
+  background-color: #FF7600;
+  color: white;
+  padding: 5px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(255, 118, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.phone-number {
+  order: 2;
+}
+.phone-number svg {
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+}
+
+.phone-number a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.phone-number a:hover {
+  color: black;
+  transform: scale(1.05);
+}
+
+.phone-number a:hover svg {
+  fill: black;
+  transform: scale(1.1);
+}
+.scrolling-text {
+  order: 1;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 70%;
+}
+
+.scrolling-text span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 15s linear infinite;
+  font-size: 1em;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  animation-delay: 0s;
+}
+  @keyframes scroll-left {
+      0% { transform: translateX(0%); } /* Change this line */
+      100% { transform: translateX(-100%); }
+  }
+main {
+  margin-top: 50px;
+  padding: 20px;
+}

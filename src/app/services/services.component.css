@@ -1,0 +1,204 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #ff7600;
+}
+.carousel-logos {
+    width: 13px !important;
+    height: 13px !important;
+  }
+/* Card Styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+/* CSS for Shadow Effect */
+.p-2 {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adjust shadow properties as needed */
+    border-radius: 8px; /* Rounded corners for the box */
+    background-color: #ffffff; /* Background color */
+    padding: 20px; /* Padding inside the box */
+  }
+  
+  /* CSS for Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  table, th, td {
+    border: 1px solid #dddddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Header background color */
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+.card {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: calc(33.333% - 20px);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+}
+
+.card-content {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #ff7600;
+}
+
+.card p {
+    font-size: 0.9em;
+    line-height: 1.6;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #ff7600;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-top: auto; /* Ensure button stays at the bottom */
+}
+
+.btn:hover {
+    background-color: #e55d00;
+}
+
+/* Centering the button */
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* Reason Styles */
+.reason-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.reason {
+    background-color: #fff;
+    border-left: 5px solid #ff7600;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reason h2 {
+    color: #ff7600;
+    margin-bottom: 10px;
+}
+
+.reason p {
+    margin: 0;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .map-box {
+    width: 100%;
+    height: 300px;
+    background-color: #eee;
+    margin-bottom: 20px;
+  }
+  
+  .btn-get-started {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #06b3f5;
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto Slab', serif;
+    border-radius: 5px;
+  }
+  
+  .btn-get-started img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+.reason:hover
+  {
+    filter: grayscale(0%);
+    /* box-shadow: 0 10px 20px rgba(255, 118, 0, 0.3); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+ .reason:hover
+ {
+  transform: translateY(-10px);
+ } 
+.reason
+{
+ transition: transform 0.3s ease;
+}
